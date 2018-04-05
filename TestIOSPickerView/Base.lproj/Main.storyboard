@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seleccione su Pizza-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Seleccione su Pizza" id="BYZ-38-t0r" customClass="ViewController" customModule="TestIOSPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizzamidSize.png" translatesAutoresizingMaskIntoConstraints="NO" id="gPF-MH-qCg">
+                                <rect key="frame" x="0.0" y="75" width="334" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-tK-bQo">
+                                <rect key="frame" x="16" y="28" width="343" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cual es su Pizza?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-jz-qRq">
+                                <rect key="frame" x="16" y="70" width="343" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72I-19-G7y">
+                                <rect key="frame" x="0.0" y="225" width="375" height="370"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7X-4s-qHX">
+                                <rect key="frame" x="42" y="109" width="306" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="O7X-4s-qHX" secondAttribute="trailing" constant="11" id="8fF-fp-hYn"/>
+                            <constraint firstItem="72I-19-G7y" firstAttribute="top" secondItem="O7X-4s-qHX" secondAttribute="bottom" constant="95" id="ALU-t4-3he"/>
+                            <constraint firstItem="kaN-tK-bQo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="GbN-LC-bSg"/>
+                            <constraint firstItem="kaN-tK-bQo" firstAttribute="leading" secondItem="RAb-jz-qRq" secondAttribute="leading" id="KD7-ch-EMO"/>
+                            <constraint firstItem="O7X-4s-qHX" firstAttribute="top" secondItem="RAb-jz-qRq" secondAttribute="bottom" constant="18" id="Lnd-d7-SHY"/>
+                            <constraint firstItem="kaN-tK-bQo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="M84-XF-Bab"/>
+                            <constraint firstItem="kaN-tK-bQo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MB9-Hd-zAK"/>
+                            <constraint firstItem="O7X-4s-qHX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="e4G-t2-Sxc"/>
+                            <constraint firstItem="RAb-jz-qRq" firstAttribute="top" secondItem="kaN-tK-bQo" secondAttribute="bottom" constant="8" symbolic="YES" id="hNl-0a-nHy"/>
+                            <constraint firstItem="kaN-tK-bQo" firstAttribute="trailing" secondItem="RAb-jz-qRq" secondAttribute="trailing" id="hkz-Y7-k0T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="O7X-4s-qHX" id="vTN-P0-TUW"/>
+                        <outlet property="myPicker" destination="72I-19-G7y" id="nNo-bY-4lr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizzamidSize.png" width="228" height="372"/>
+    </resources>
+</document>
